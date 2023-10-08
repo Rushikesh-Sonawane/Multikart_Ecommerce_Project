@@ -7,7 +7,7 @@ function Cart() {
     <div>
       <div className="containerfluid bg-cart">
         <div className="row ">
-          <div className="col-lg-6">
+          <div className="col-lg-6 offset-1">
             <h2 className="cart_header_heading">CART</h2>
           </div>
           <div className="col-lg-2  offset-2">
@@ -28,7 +28,7 @@ function Cart() {
 
       <div className="container">
           <div className="row">
-            <div className="col-12 ">
+            <div className="col-12 text-center mt-5">
               <p>Your Cart is Empty</p>
               <p>Explore More Sortlist Some Items</p>
             </div>
