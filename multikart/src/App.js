@@ -6,11 +6,13 @@ import Wishlist from './app/pages/Wishlist';
 import Checkout from './app/pages/Checkout';
 import Footer from './app/pages/Footer';
 import Login from './app/pages/Login';
+import Header from './app/Component/Header'
 
 
 function App() {
   return (
     <div>
+      <Header/>
     <BrowserRouter>
     <Cart/>
     <Wishlist />
@@ -18,6 +20,7 @@ function App() {
     <Login/>
     </BrowserRouter>
     <Footer/>
+
 
     </div>
   );
