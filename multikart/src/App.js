@@ -7,6 +7,7 @@ import Checkout from './app/pages/Checkout';
 import Footer from './app/pages/Footer';
 import Login from './app/pages/Login';
 import Header from './app/Component/Header'
+import LogoLine from './app/pages/LogoLine';
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
     <Wishlist />
     <Checkout />
     <Login/>
+    <LogoLine/>
     </BrowserRouter>
     <Footer/>
 
