@@ -5,6 +5,7 @@ import Cart from './app/pages/Cart';
 import Wishlist from './app/pages/Wishlist';
 import Checkout from './app/pages/Checkout';
 import Footer from './app/pages/Footer';
+import Login from './app/pages/Login';
 
 
 function App() {
@@ -14,8 +15,10 @@ function App() {
     <Cart/>
     <Wishlist />
     <Checkout />
+    <Login/>
     </BrowserRouter>
     <Footer/>
+
     </div>
   );
 }
