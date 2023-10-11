@@ -37,7 +37,7 @@ function LogoLine() {
         <img src={require("../../assets/images/LogoLineImages/img8.jpg")} className="img-front" />
       </div>
     </div>
-    <div className="LogoLine2">
+    <div className="LogoLine2 mt-5 mx-5 justify-content-evenly ">
     <div className="boxs"><img src={require("../../assets/images/LogoLineImages/1.png")}/></div>
     <div className="boxs"><img src={require("../../assets/images/LogoLineImages/2.png")}/></div>
     <div className="boxs"><img src={require("../../assets/images/LogoLineImages/3.png")}/></div>

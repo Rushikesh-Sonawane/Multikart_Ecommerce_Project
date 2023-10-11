@@ -1,8 +1,16 @@
 import React from "react";
 // import { Link } from "react-router-dom";
 import "../../assets/css/cart.css";
+import { useSelector, useDispatch } from 'react-redux'
+import { remove } from '../reduxStore/CartSlice'
 
 function Cart() {
+  const dispatch = useDispatch();
+  const product = useSelector(state => state.cart)
+
+  const removeItem = (product) => {
+    dispatch(remove(product))
+  }
   return (
     <div>
       <div className="containerfluid bg-cart">
@@ -27,15 +35,44 @@ function Cart() {
       </div>
 
       <div className="container">
-          <div className="row">
-            <div className="col-12 text-center mt-5">
-              <p>Your Cart is Empty</p>
-              <p>Explore More Sortlist Some Items</p>
-            </div>
+        <div className="row">
+          <div className="col-12 text-center mt-5">
+            {/* <p>Your Cart is Empty</p> */}
+            {/* <p>Explore More Sortlist Some Items</p> */}
+            <table className='table table-bordered table-striped'>
+              <thead>
+                <tr>
+                  <th>Image</th>
+                  <th>Title</th>
+                  <th>Rating</th>
+                  <th>Price</th>
+                  <th>Actions</th>
+                </tr>
+              </thead>
+              <tbody>
+                {product.map((item) => (
+                  <tr key={item.id}>
+                    <td><img src={item.image} alt={item.category} width="60" /></td>
+                    <td>{item.title}</td>
+                    <td>{item.rating.rate}</td>
+                    <td>{item.price}</td>
+                    <td>
+                      <button onClick={() => removeItem(item.id)} className='btn btn-danger'>Remove</button>
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
           </div>
         </div>
+      </div>
     </div>
   );
 }
 
 export default Cart;
+
+
+
+
+

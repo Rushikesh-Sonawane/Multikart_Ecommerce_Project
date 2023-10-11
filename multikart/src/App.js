@@ -8,6 +8,7 @@ import Footer from './app/pages/Footer';
 import Login from './app/pages/Login';
 import Header from './app/Component/Header'
 import Home from './app/pages/Home';
+import Product from './app/pages/categories/Product';
 
 
 
@@ -24,6 +25,7 @@ function App() {
           <Route path='/Cart' Component={Cart} />
           <Route path='/Checkout' Component={Checkout} />
           <Route path='/Login' Component={Login} />
+          <Route path='/clothing' Component={Product} />
           <Route path='/*' Component={Home} />
         </Routes>
         <Footer />

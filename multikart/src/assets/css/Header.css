@@ -70,9 +70,8 @@
     transition:1s
 } 
 .offcanvas-body{
-  margin-left:-100PX;
+  margin-left:30PX;
 cursor: pointer;
-
 
 }
 
@@ -102,7 +101,7 @@ cursor: pointer;
   }
   
   /* Links inside the dropdown */
-  .dropdown-content a {
+  .dropdown-content a{
     color: black;
     padding: 12px 16px;
     text-decoration: none;

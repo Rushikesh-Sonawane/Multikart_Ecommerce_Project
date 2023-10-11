@@ -34,6 +34,7 @@
     transition: 0.5s ease-out;
 }
 
+/* checkout */
 /* form styled labels */
 .checkout_labelform{
     color:#333;
@@ -64,5 +65,11 @@
     color:#6f6f6f;
     cursor: pointer;
     text-transform: capitalize;
+    font-weight: 600;
+}
+
+.labelCheckout::after{
+    content:"*";
+    color:red;
     font-weight: 600;
 }
