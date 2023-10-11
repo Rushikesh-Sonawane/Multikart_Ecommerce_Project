@@ -1,5 +1,6 @@
 import React from 'react';
 import "../../assets/css/Header.css"
+import { NavLink } from 'react-router-dom';
 
 
 
@@ -15,14 +16,19 @@ function Header() {
         </div>
         <div className='container2dk' id='navbardk'>call Us -123-456-7890</div>
 
-        <div className='link1dk'><img src='https://w7.pngwing.com/pngs/997/899/png-transparent-red-heart-illustration-heart-icon-3d-red-heart-love-heart-emoticon-thumbnail.png' width='12' height='12' />Wishlist</div>
+        <div className='link1dk'><img src='https://w7.pngwing.com/pngs/997/899/png-transparent-red-heart-illustration-heart-icon-3d-red-heart-love-heart-emoticon-thumbnail.png' width='12' height='12' /><NavLink to={"/Wishlist"} >Wishlist</NavLink></div>
 
         <div className="dropdown">
           <div className="dropbtn"><img src='https://w7.pngwing.com/pngs/129/350/png-transparent-contact-friend-icon-pawn-person-symbol-thumbnail.png' width='13' height='13' />My Account</div>
           <div className="dropdown-content">
-            <a href="#"><h6>Login</h6></a>
+          <NavLink to={"/Login"} >Login</NavLink>
+          <NavLink to={"/Wishlist"} >Wishlist</NavLink>
+          <NavLink to={"/Cart"} >Cart</NavLink>
+          <NavLink to={"/Register"} >Register</NavLink>
+          <NavLink to={"/"} >Logout</NavLink>
+            {/* <a href="#"><h6>Login</h6></a>
             <a href="#"><h6>Register</h6></a>
-            <a href="#"><h6>Log Out</h6></a>
+            <a href="#"><h6>Log Out</h6></a> */}
           </div>
         </div>
 
@@ -229,7 +235,8 @@ function Header() {
               </div>
             </div>
             <div className='homepagedisplayflexdk' id='size' col-1>
-              <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvzsHdivSzgnGmBt5up1Qz6IZuK20equGS3t5Yi3oXbpeP500N_dv5LSoH6ql-mhe8pQQ&usqp=CAU' height='37' width='37' />
+             
+              <NavLink to={"/Cart"} > <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvzsHdivSzgnGmBt5up1Qz6IZuK20equGS3t5Yi3oXbpeP500N_dv5LSoH6ql-mhe8pQQ&usqp=CAU' height='37' width='37' /></NavLink>
             </div>
 
           </nav>
