@@ -4,8 +4,11 @@ import { Link } from 'react-router-dom';
 import * as Yup from 'yup';
 
 
-
 function Checkout() {
+
+     
+
+
     const formik = useFormik({
         initialValues: {
             fname: '',
@@ -30,6 +33,13 @@ function Checkout() {
             console.log(values)
         }
     });
+
+       console.log(formik);
+
+      const handlePlaceOrder=()=>{
+          alert('Order successfull....')
+      }
+
     return (
         <div>
             <div className="containerfluid bg-wishlist mt-5">
@@ -52,7 +62,7 @@ function Checkout() {
                         <form action="" onSubmit={formik.handleSubmit} className='form-control border border-0'>
                             <div className="row pe-3">
                                 <div className="col-lg-5">
-                                    <label htmlFor="fname" className='form-label checkout_labelform'>First Name</label>
+                                    <label htmlFor="fname" className='form-label checkout_labelform labelCheckout'>First Name</label>
                                     <input type="text"
                                         name="fname"
                                         className="form-input p-2 w-100"
@@ -143,7 +153,7 @@ function Checkout() {
                             <div className='form-check'>
                                 <input type="checkbox" /><span className='ps-2'>Create An Account?</span>
                             </div>
-                            <button className='btn-wishlist text-decoration-none offset-8'>PLACE ORDER</button>
+                            <button className='btn-wishlist text-decoration-none offset-8' onClick={handlePlaceOrder}>PLACE ORDER</button>
                         </form>
 
                     </div>
@@ -206,3 +216,4 @@ function Checkout() {
 }
 
 export default Checkout;
+
