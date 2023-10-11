@@ -1,8 +1,17 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import '../../assets/css/wishlist.css';
+import { useDispatch, useSelector } from 'react-redux';
+import { removeWishlist } from '../reduxStore/WishlistSlice';
 
 const Wishlist = () => {
+    const dispatch=useDispatch();
+    const wishlistItem=useSelector(state=>state.wishlist)
+
+const removeWishlistItem=(id)=>{
+    dispatch(removeWishlist(id))
+}
+
     return (
         <div>
         
@@ -13,8 +22,8 @@ const Wishlist = () => {
                     </div>
                     <div className="col-lg-2 offset-2 ">
                         <ul className='d-flex list-unstyled '>
-                            <li className='ms-2'><Link className='text-decoration-none listHeadingWish' to="/">HOME</Link><span className='fs-5 ps-2 listHeadingWish '>/</span></li>
-                            <li className='ms-2'><Link className='text-decoration-none listHeadingWish' >WISHLIST</Link></li>
+                            <li className='ms-2'><NavLink className='text-decoration-none listHeadingWish' to="/">HOME</NavLink><span className='fs-5 ps-2 listHeadingWish '>/</span></li>
+                            <li className='ms-2'><NavLink className='text-decoration-none listHeadingWish' >WISHLIST</NavLink></li>
                         </ul>
                     </div>
                 </div>
@@ -30,14 +39,25 @@ const Wishlist = () => {
                             <th>ACTION</th>
                         </tr>
                     </thead>
+                      {wishlistItem.map((item)=>(
+                        <tr key={item.id}>
+                             <td><img src={item.image} alt={item.category} width="80px"/></td>
+                             <td>{item.title}</td>
+                             <td>{item.price}</td>
+                             <td>yes</td>
+                             <td>
+                                 <button onClick={()=>removeWishlistItem(item.id)}>X</button>
+                             </td>
+                        </tr>
+                      ))}
                 </table>
             </div>
             <div className="container mt-5">
                 <div className="row">
                     <div className="col-lg-4"></div>
                     <div className="col-lg-7  offset-1 d-flex flex-row-reverse">
-                        <button className='ms-3  btn-wishlist'>CHECK OUT</button>
-                        <button className=' btn-wishlist'>CONTINUE SHOPPING</button>
+                        <NavLink to="/Checkout" className='ms-3  btn-wishlist'>CHECK OUT</NavLink>
+                        <NavLink to="/" className='btn-wishlist'>CONTINUE SHOPPING</NavLink>
                     </div>
                 </div>
             </div>
