@@ -28,7 +28,7 @@ const Footer = () => {
     };
 
     return (
-        <footer className="footer">
+        <footer className="footer mt-5" >
             <div className="container">
                 <div className="row">
                     <div className="col-lg-6 col-md-12 col-sm-12">

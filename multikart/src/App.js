@@ -7,22 +7,28 @@ import Checkout from './app/pages/Checkout';
 import Footer from './app/pages/Footer';
 import Login from './app/pages/Login';
 import Header from './app/Component/Header'
-import LogoLine from './app/pages/LogoLine';
+import Home from './app/pages/Home';
+
+
 
 
 function App() {
   return (
     <div>
-      <Header/>
-    <BrowserRouter>
-    <Cart/>
-    <Wishlist />
-    <Checkout />
-    <Login/>
-    <LogoLine/>
-    </BrowserRouter>
-    <Footer/>
-
+      
+      <BrowserRouter>
+      <Header />
+        <Routes>
+          <Route path='/' Component={Home} />
+          <Route path='/Wishlist' Component={Wishlist} />
+          <Route path='/Cart' Component={Cart} />
+          <Route path='/Checkout' Component={Checkout} />
+          <Route path='/Login' Component={Login} />
+          <Route path='/*' Component={Home} />
+        </Routes>
+        <Footer />
+      </BrowserRouter>
+      
 
     </div>
   );
