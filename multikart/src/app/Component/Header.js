@@ -53,7 +53,7 @@ function Header() {
                 </div>
                 <div className="offcanvas-body">
                   <h5><Link to="/clothing" className='text-decoration-none text-dark' >CLOTHING</Link></h5><br></br>
-                  <h5><Link to="/" className='text-decoration-none text-dark'>BAGS</Link></h5><br></br>
+                  <h5><Link to="/furniture" className='text-decoration-none text-dark'>FURNITURE</Link></h5><br></br>
                   <h5><Link to="/" className='text-decoration-none text-dark'>FOOTWEAR</Link></h5><br></br>
                   <h5><Link to="/" className='text-decoration-none text-dark'>WATCHES</Link></h5><br></br>
                   <h5><Link to="/" className='text-decoration-none text-dark'>ACCESSORIES</Link></h5><br></br>
@@ -94,7 +94,7 @@ function Header() {
                     <li><Link className="dropdown-item Linkk" to="/">Basics</Link></li>
                     <li><Link className="dropdown-item Linkk" to="/">Beauty</Link></li>
                     <li><Link className="dropdown-item Linkk" to="/">Electronic</Link></li>
-                    <li><Link className="dropdown-item Linkk" to="/">Furniture</Link></li>
+                    <li><Link className="dropdown-item Linkk" to="/furniture">Furniture</Link></li>
                     <li><Link className="dropdown-item Linkk" to="/">Vegetables</Link></li>
                     <li><Link className="dropdown-item Linkk" to="/">Watch</Link></li>
                     <li><Link className="dropdown-item Linkk" to="/">Lights</Link></li>

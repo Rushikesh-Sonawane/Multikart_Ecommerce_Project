@@ -118,7 +118,87 @@
         "count": 120
       }
     }
+  ],
+  "furniture": [
+    {
+      "id": 13,
+      "title": "arm chair",
+      "price": 201,
+      "image": "https://multikart-react-reactpixelstrap.vercel.app/assets/images/furniture/product/1.jpg",
+      "rating": {
+        "rate": 3.9,
+        "count": 120
+      }
+    },
+    {
+      "id": 14,
+      "title": "oak Finish chair",
+      "price": 475.60,
+      "image": "https://multikart-react-reactpixelstrap.vercel.app/assets/images/furniture/product/3.jpg",
+      "rating": {
+        "rate": 3.9,
+        "count": 120
+      }
+    },
+    {
+      "id": 15,
+      "title": "wooden chair",
+      "price": 345.50,
+      "image": "https://multikart-react-reactpixelstrap.vercel.app/assets/images/furniture/product/7.jpg",
+      "rating": {
+        "rate": 3.9,
+        "count": 120
+      }
+    },
+    {
+      "id": 16,
+      "title": "Metal Table Lamp",
+      "price": 295,
+      "image": "https://multikart-react-reactpixelstrap.vercel.app/assets/images/furniture/product/19.jpg",
+      "rating": {
+        "rate": 3.9,
+        "count": 120
+      }
+    },
+    {
+      "id": 17,
+      "title": " Wood End Table",
+      "price": 500,
+      "image": "https://multikart-react-reactpixelstrap.vercel.app/assets/images/furniture/product/4.jpg",
+      "rating": {
+        "rate": 3.9,
+        "count": 120
+      }
+    },
+    {
+      "id": 18,
+      "title": "Lounge Chai",
+      "price": 450,
+      "image":"https://multikart-react-reactpixelstrap.vercel.app/assets/images/furniture/product/5.jpg",
+      "rating": {
+        "rate": 3.9,
+        "count": 120
+      }
+    },
+    {
+      "id": 19,
+      "title": "Rocking Chai",
+      "price": 355.5,
+      "image": "https://multikart-react-reactpixelstrap.vercel.app/assets/images/furniture/product/8.jpg",
+      "rating": {
+        "rate": 3.9,
+        "count": 120
+      }
+    },
+    {
+      "id": 20,
+      "title": "Barrel Chai",
+      "price": 200,
+      "image": "https://multikart-react-reactpixelstrap.vercel.app/assets/images/furniture/product/2.jpg",
+      "rating": {
+        "rate": 3.9,
+        "count": 120
+      }
+    }
   ]
-
-
 }
