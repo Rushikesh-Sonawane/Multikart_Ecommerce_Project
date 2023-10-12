@@ -5,14 +5,14 @@ import { add } from '../../reduxStore/CartSlice';
 import { addWishlist } from '../../reduxStore/WishlistSlice';
 
 
-function Product() {
+function Product({Url}) {
   const [product, getProduct] = useState([]);
 
   const dispatch = useDispatch()
 
   useEffect(() => {
     const getData = async () => {
-      const res = await axios.get('http://localhost:4000/userData')
+      const res = await axios.get(Url)
       getProduct(res.data);
       console.log(res.data);
     }
