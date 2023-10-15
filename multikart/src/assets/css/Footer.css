@@ -1,3 +1,4 @@
+
 .footer{
     background-color: rgb(211, 227, 222);
     padding: 10px;
@@ -39,7 +40,11 @@
     }
     
     
-    
+    .li2 {
+      color: black; /* Set text color to black */
+      text-decoration: none; /* Remove underlines from anchor links */
+   
+    }
     .link-for{
         color: black;
     }
