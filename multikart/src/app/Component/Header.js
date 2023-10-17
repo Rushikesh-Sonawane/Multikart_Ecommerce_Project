@@ -95,7 +95,7 @@ function Header() {
                     <li><Link className="dropdown-item Linkk" to="/">Beauty</Link></li>
                     <li><Link className="dropdown-item Linkk" to="/">Electronic</Link></li>
                     <li><Link className="dropdown-item Linkk" to="/furniture">Furniture</Link></li>
-                    <li><Link className="dropdown-item Linkk" to="/">Vegetables</Link></li>
+                    <li><Link className="dropdown-item Linkk" to="/vegetable">Vegetables</Link></li>
                     <li><Link className="dropdown-item Linkk" to="/">Watch</Link></li>
                     <li><Link className="dropdown-item Linkk" to="/">Lights</Link></li>
                     <li><Link className="dropdown-item Linkk" to="/">Goggles</Link></li>

@@ -16,6 +16,7 @@ function Product({Url}) {
       getProduct(res.data);
       console.log(res.data);
     }
+    
     getData();
   }, [])
 
