@@ -11,6 +11,7 @@ import Home from './app/pages/Home';
 import Product from './app/pages/categories/Product';
 import furniture from './app/pages/categories/Furniture';
 import clothing from './app/pages/categories/Clothing';
+import vegetable from './app/pages/categories/Vegetable';
 
 
 
@@ -30,6 +31,7 @@ function App() {
           <Route path='/Login' Component={Login} />
           <Route path='/clothing' Component={clothing} />
           <Route path='/furniture' Component={furniture} />
+          <Route path='/vegetable' Component={vegetable}/>
           <Route path='/*' Component={Home} />
         </Routes>
         <Footer />

@@ -200,5 +200,67 @@
         "count": 120
       }
     }
+  ],
+  "vegetable": [
+    {
+      "id": 21,
+      "title": "Beetroot",
+      "price": 31.50,
+      "image": "https://multikart-react-reactpixelstrap.vercel.app/assets/images/vegetables/pro/1.jpg",
+      "rating": {
+        "rate": 4.0,
+        "count": 120
+      }
+    },
+    {
+      "id": 22,
+      "title": "Cabbage",
+      "price": 20.00,
+      "image": "https://multikart-react-reactpixelstrap.vercel.app/assets/images/vegetables/pro/2.jpg",
+      "rating": {
+        "rate": 3.9,
+        "count": 120
+      }
+    },
+    {
+      "id": 23,
+      "title": "Onion",
+      "price": 27.55,
+      "image": "https://multikart-react-reactpixelstrap.vercel.app/assets/images/vegetables/pro/3.jpg",
+      "rating": {
+        "rate": 3.9,
+        "count": 120
+      }
+    },
+    {
+      "id": 24,
+      "title": "Brinjal",
+      "price": 29.60,
+      "image": "https://multikart-react-reactpixelstrap.vercel.app/assets/images/vegetables/pro/4.jpg",
+      "rating": {
+        "rate": 3.9,
+        "count": 120
+      }
+    },
+    {
+      "id": 25,
+      "title": " Cucumber",
+      "price": 44.22,
+      "image": "https://multikart-react-reactpixelstrap.vercel.app/assets/images/vegetables/pro/5.jpg",
+      "rating": {
+        "rate": 3.9,
+        "count": 120
+      }
+    },
+    {
+      "id": 26,
+      "title": "Tomato",
+      "price": 40.00,
+      "image":"https://multikart-react-reactpixelstrap.vercel.app/assets/images/vegetables/pro/6.jpg",
+      "rating": {
+        "rate": 3.9,
+        "count": 120
+      }
+    }
   ]
 }
