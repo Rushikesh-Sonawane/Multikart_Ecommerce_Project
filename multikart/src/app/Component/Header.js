@@ -1,12 +1,14 @@
 import React from 'react';
 import "../../assets/css/Header.css"
-import { NavLink } from 'react-router-dom';
+import { Link} from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux'
 
 
 
 function Header() {
-  const  cartItem=useSelector(state=>state.cart)
+  const cartItem = useSelector(state => state.cart)
+  const wishListItem = useSelector(state => state.wishlist)
+
 
   return (
     <>
@@ -17,20 +19,20 @@ function Header() {
         </div>
         <div className='container2dk' id='navbardk'>call Us -123-456-7890</div>
 
-        <div className='link1dk'><img src='https://w7.pngwing.com/pngs/997/899/png-transparent-red-heart-illustration-heart-icon-3d-red-heart-love-heart-emoticon-thumbnail.png' width='12' height='12' /><NavLink to={"/Wishlist"} >Wishlist</NavLink></div>
+        <div className='link1dk'><i className="fa-sharp fa-solid fa-heart fs-5 me-2" style={{color: "#f10404"}}></i><Link to={"/Wishlist"} className="text-decoration-none fw-bolder" >Wishlist {wishListItem.length}</Link></div>
 
         <div className="dropdown">
           <div className="dropbtn"><img src='https://w7.pngwing.com/pngs/129/350/png-transparent-contact-friend-icon-pawn-person-symbol-thumbnail.png' width='13' height='13' />My Account</div>
           <div className="dropdown-content">
-          <NavLink to={"/Login"} >Login</NavLink>
-          <NavLink to={"/Wishlist"} >Wishlist</NavLink>
-          <NavLink to={"/Cart"} >Cart</NavLink>
-          <NavLink to={"/clothing"} className='text-dark offset-9 text-decoration-none'>CartItem:{cartItem.length}</NavLink>
-          <NavLink to={"/Register"} >Register</NavLink>
-          <NavLink to={"/"} >Logout</NavLink>
-            {/* <NavLink to="/"><h6>Login</h6></NavLink>
-            <NavLink to="/"><h6>Register</h6></NavLink>
-            <NavLink to="/"><h6>Log Out</h6></NavLink> */}
+            <Link to={"/Login"} >Login</Link>
+            <Link to={"/Wishlist"} >Wishlist</Link>
+            <Link to={"/Cart"} >Cart</Link>
+            <Link to={"/clothing"} className='text-dark offset-9 text-decoration-none'>CartItem:{cartItem.length}</Link>
+            <Link to={"/Register"} >Register</Link>
+            <Link to={"/"} >Logout</Link>
+            {/* <Link to="/"><h6>Login</h6></Link>
+            <Link to="/"><h6>Register</h6></Link>
+            <Link to="/"><h6>Log Out</h6></Link> */}
           </div>
         </div>
 
@@ -50,15 +52,15 @@ function Header() {
                   <hr></hr>
                 </div>
                 <div className="offcanvas-body">
-                  <h5>CLOTHING</h5><br></br>
-                  <h5>BAGS</h5><br></br>
-                  <h5>FOOTWEAR</h5><br></br>
-                  <h5>WATCHES</h5><br></br>
-                  <h5>ACCESSORIES</h5><br></br>
-                  <h5>HOUSE OF DESIGN</h5><br></br>
-                  <h5>BEAUTY AND PERSONAL CARE</h5><br></br>
-                  <h5>HOME AND DECOR</h5><br></br>
-                  <h5>KITCHEN</h5>
+                  <h5><Link to="/clothing" className='text-decoration-none text-dark' >CLOTHING</Link></h5><br></br>
+                  <h5><Link to="/furniture" className='text-decoration-none text-dark'>FURNITURE</Link></h5><br></br>
+                  <h5><Link to="/" className='text-decoration-none text-dark'>FOOTWEAR</Link></h5><br></br>
+                  <h5><Link to="/" className='text-decoration-none text-dark'>WATCHES</Link></h5><br></br>
+                  <h5><Link to="/" className='text-decoration-none text-dark'>ACCESSORIES</Link></h5><br></br>
+                  <h5><Link to="/" className='text-decoration-none text-dark'>HOUSE OF DESIGN</Link></h5><br></br>
+                  <h5><Link to="/" className='text-decoration-none text-dark'>BEAUTY AND PERSONAL CARE</Link></h5><br></br>
+                  <h5><Link to="/" className='text-decoration-none text-dark'>HOME AND DECOR</Link></h5><br></br>
+                  <h5><Link to="/" className='text-decoration-none text-dark'>KITCHEN</Link></h5>
 
 
                 </div>
@@ -70,9 +72,9 @@ function Header() {
               </div>
 
               {/* Button to open the offcanvas sidebar  */}
-              <NavLink className="btn btn-default" to="/" data-bs-toggle="offcanvas" data-bs-target="#demo">
+              <Link className="btn btn-default" to="/" data-bs-toggle="offcanvas" data-bs-target="#demo">
                 <i className="fa fa-align-justify" title="Align Justify" ></i>
-              </NavLink>
+              </Link>
             </div>
             <div className='homepagedisplayflexdk' col-2>
               <img src='https://multikart-react-reactpixelstrap.vercel.app/assets/images/icon/logo.png' />
@@ -82,21 +84,21 @@ function Header() {
             <div className='homepagedisplayflexdk' col-1 id='homepage_navbar'>
               <div className="btn-group">
 
-                <div className="nav-item dropdown">
-                  <NavLink className="nav-link dropdown-toggle" to="/" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <div className="nav-item  dropdown">
+                  <Link className="nav-link dropdown-toggle" to="/" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     HOME
-                  </NavLink>
+                  </Link>
                   <ul className="dropdown-menu">
-                    <li><NavLink className="dropdown-item" to="/">New Demo New</NavLink></li>
-                    <li><NavLink className="dropdown-item" to="/clothing">Clothing</NavLink></li>
-                    <li><NavLink className="dropdown-item" to="/">Basics</NavLink></li>
-                    <li><NavLink className="dropdown-item" to="/">Beauty</NavLink></li>
-                    <li><NavLink className="dropdown-item" to="/">Electronic</NavLink></li>
-                    <li><NavLink className="dropdown-item" to="/">Furniture</NavLink></li>
-                    <li><NavLink className="dropdown-item" to="/">Vegetables</NavLink></li>
-                    <li><NavLink className="dropdown-item" to="/">Watch</NavLink></li>
-                    <li><NavLink className="dropdown-item" to="/">Lights</NavLink></li>
-                    <li><NavLink className="dropdown-item" to="/">Goggles</NavLink></li>
+                    <li><Link className="dropdown-item Linkk" to="/">New Demo New</Link></li>
+                    <li><Link className="dropdown-item Linkk" to="/clothing">Clothing</Link></li>
+                    <li><Link className="dropdown-item Linkk" to="/">Basics</Link></li>
+                    <li><Link className="dropdown-item Linkk" to="/">Beauty</Link></li>
+                    <li><Link className="dropdown-item Linkk" to="/">Electronic</Link></li>
+                    <li><Link className="dropdown-item Linkk" to="/furniture">Furniture</Link></li>
+                    <li><Link className="dropdown-item Linkk" to="/vegetable">Vegetables</Link></li>
+                    <li><Link className="dropdown-item Linkk" to="/">Watch</Link></li>
+                    <li><Link className="dropdown-item Linkk" to="/">Lights</Link></li>
+                    <li><Link className="dropdown-item Linkk" to="/">Goggles</Link></li>
 
                   </ul>
                 </div>
@@ -105,21 +107,21 @@ function Header() {
 
             <div className='homepagedisplayflexdk' col-1>
               <div className="btn-group">
-                <div className="nav-item dropdown">
-                  <NavLink className="nav-link dropdown-toggle" to="/" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <div className="nav-item  dropdown">
+                  <Link className="nav-link dropdown-toggle" to="/" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     SHOP
-                  </NavLink>
+                  </Link>
                   <ul className="dropdown-menu" >
-                    <li><NavLink className="dropdown-item" to="/">Left Sidebar</NavLink></li>
-                    <li><NavLink className="dropdown-item" to="/">Right Sidebar</NavLink></li>
+                    <li><Link className="dropdown-item Linkk" to="/">Left Sidebar</Link></li>
+                    <li><Link className="dropdown-item Linkk" to="/">Right Sidebar</Link></li>
 
-                    <li><NavLink className="dropdown-item" to="/">No Sidebar</NavLink></li>
-                    <li><NavLink className="dropdown-item" to="/">Sidebar Popup</NavLink></li>
-                    <li><NavLink className="dropdown-item" to="/">Metro New</NavLink></li>
-                    <li><NavLink className="dropdown-item" to="/">Full Width New</NavLink></li>
-                    <li><NavLink className="dropdown-item" to="/">3 Grid</NavLink></li>
-                    <li><NavLink className="dropdown-item" to="/">6 Grid</NavLink></li>
-                    vercel<li><NavLink className="dropdown-item" to="/">List View</NavLink></li>
+                    <li><Link className="dropdown-item Linkk" to="/">No Sidebar</Link></li>
+                    <li><Link className="dropdown-item Linkk" to="/">Sidebar Popup</Link></li>
+                    <li><Link className="dropdown-item Linkk" to="/">Metro New</Link></li>
+                    <li><Link className="dropdown-item Linkk" to="/">Full Width New</Link></li>
+                    <li><Link className="dropdown-item Linkk" to="/">3 Grid</Link></li>
+                    <li><Link className="dropdown-item Linkk" to="/">6 Grid</Link></li>
+                    vercel<li><Link className="dropdown-item Linkk" to="/">List View</Link></li>
                   </ul>
                 </div>
 
@@ -128,21 +130,21 @@ function Header() {
 
             <div className='homepagedisplayflexdk' col-1>
               <div className="btn-group">
-                <div className="nav-item dropdown">
-                  <NavLink className="nav-link dropdown-toggle" to="/" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <div className="nav-item  dropdown">
+                  <Link className="nav-link dropdown-toggle" to="/" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     PRODUCTS
-                  </NavLink>
+                  </Link>
                   <ul className="dropdown-menu">
-                    <li><NavLink className="dropdown-item" to="/">Sidebar</NavLink></li>
-                    <li><NavLink className="dropdown-item" to="/">Thumbnail Image</NavLink></li>
+                    <li><Link className="dropdown-item Linkk" to="/">Sidebar</Link></li>
+                    <li><Link className="dropdown-item Linkk" to="/">Thumbnail Image</Link></li>
 
-                    <li><NavLink className="dropdown-item" to="/">3-Column</NavLink></li>
-                    <li><NavLink className="dropdown-item" to="/">4 Image</NavLink></li>
-                    <li><NavLink className="dropdown-item" to="/">Bundle Product</NavLink></li>
-                    <li><NavLink className="dropdown-item" to="/">Sticky</NavLink></li>
-                    <li><NavLink className="dropdown-item" to="/">Accordian</NavLink></li>
-                    <li><NavLink className="dropdown-item" to="/">Image Swatch</NavLink></li>
-                    <li><NavLink className="dropdown-item" to="/">Accordian</NavLink></li>
+                    <li><Link className="dropdown-item Linkk" to="/">3-Column</Link></li>
+                    <li><Link className="dropdown-item Linkk" to="/">4 Image</Link></li>
+                    <li><Link className="dropdown-item Linkk" to="/">Bundle Product</Link></li>
+                    <li><Link className="dropdown-item Linkk" to="/">Sticky</Link></li>
+                    <li><Link className="dropdown-item Linkk" to="/">Accordian</Link></li>
+                    <li><Link className="dropdown-item Linkk" to="/">Image Swatch</Link></li>
+                    <li><Link className="dropdown-item Linkk" to="/">Accordian</Link></li>
                   </ul>
                 </div>
 
@@ -152,19 +154,19 @@ function Header() {
             <div className='homepagedisplayflexdk' col-1>
 
               <div className="btn-group">
-                <div className="nav-item dropdown">
-                  <NavLink className="nav-link dropdown-toggle" to="/" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <div className="nav-item  dropdown">
+                  <Link className="nav-link dropdown-toggle" to="/" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Furnitures
-                  </NavLink>
+                  </Link>
                   <ul className="dropdown-menu">
                     <h5 id='middledk'>Portfolio</h5>
-                    <li><NavLink className="dropdown-item" to="/">Portfolio Grid 2</NavLink></li>
-                    <li><NavLink className="dropdown-item" to="/">Portfolio Grid 3</NavLink></li>
-                    <li><NavLink className="dropdown-item" to="/">Portfolio Grid 4</NavLink></li>
-                    <li><NavLink className="dropdown-item" to="/">Masonry Grid 2</NavLink></li>
-                    <li><NavLink className="dropdown-item" to="/">Masonry Grid 3</NavLink></li>
-                    <li><NavLink className="dropdown-item" to="/">Masonry Grid 4</NavLink></li>
-                    <li><NavLink className="dropdown-item" to="/">Masonry Full Width</NavLink></li>
+                    <li><Link className="dropdown-item Linkk" to="/">Portfolio Grid 2</Link></li>
+                    <li><Link className="dropdown-item Linkk" to="/">Portfolio Grid 3</Link></li>
+                    <li><Link className="dropdown-item Linkk" to="/">Portfolio Grid 4</Link></li>
+                    <li><Link className="dropdown-item Linkk" to="/">Masonry Grid 2</Link></li>
+                    <li><Link className="dropdown-item Linkk" to="/">Masonry Grid 3</Link></li>
+                    <li><Link className="dropdown-item Linkk" to="/">Masonry Grid 4</Link></li>
+                    <li><Link className="dropdown-item Linkk" to="/">Masonry Full Width</Link></li>
                   </ul>
                 </div>
               </div>
@@ -173,24 +175,26 @@ function Header() {
 
             <div className='homepagedisplayflexdk' col-1>
               <div className="btn-group">
-                <div className="nav-item dropdown">
-                  <NavLink className="nav-link dropdown-toggle" to="/" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <div className="nav-item  dropdown">
+                  <Link className="nav-link dropdown-toggle" to="/" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     PAGES
-                  </NavLink>
-                  <ul className="dropdown-menu">
-                    <li><NavLink className="dropdown-item" to="/">Vendor NEW</NavLink></li>
-                    <li><NavLink className="dropdown-item" to="/">Account</NavLink></li>
+                  </Link>
+                  <ul className="dropdown-menu    ">
+                    <li><Link className="dropdown-item Linkk" to="/">Vendor NEW</Link></li>
+                    <li><Link className="dropdown-item Linkk" to="/">Account</Link>
+                      
+                    </li>
 
-                    <li><NavLink className="dropdown-item" to="/">About-us</NavLink></li>
-                    <li><NavLink className="dropdown-item" to="/">Search</NavLink></li>
-                    <li><NavLink className="dropdown-item" to="/">Typography NEW</NavLink></li>
-                    <li><NavLink className="dropdown-item" to="/">Review</NavLink></li>
-                    <li><NavLink className="dropdown-item" to="/">Order-Success</NavLink></li>
-                    <li><NavLink className="dropdown-item" to="/">Compare</NavLink></li>
-                    <li><NavLink className="dropdown-item" to="/">Collection</NavLink></li>
-                    <li><NavLink className="dropdown-item" to="/">Lookbook</NavLink></li>
-                    <li><NavLink className="dropdown-item" to="/">Site-Map</NavLink></li>
-                    <li><NavLink className="dropdown-item" to="/">404</NavLink></li>
+                    <li><Link className="dropdown-item Linkk" to="/">About-us</Link></li>
+                    <li><Link className="dropdown-item Linkk" to="/">Search</Link></li>
+                    <li><Link className="dropdown-item Linkk" to="/">Typography NEW</Link></li>
+                    <li><Link className="dropdown-item Linkk" to="/">Review</Link></li>
+                    <li><Link className="dropdown-item Linkk" to="/">Order-Success</Link></li>
+                    <li><Link className="dropdown-item Linkk" to="/">Compare</Link></li>
+                    <li><Link className="dropdown-item Linkk" to="/">Collection</Link></li>
+                    <li><Link className="dropdown-item Linkk" to="/">Lookbook</Link></li>
+                    <li><Link className="dropdown-item Linkk" to="/">Site-Map</Link></li>
+                    <li><Link className="dropdown-item Linkk" to="/">404</Link></li>
 
                   </ul>
                 </div>
@@ -201,15 +205,15 @@ function Header() {
               <div className="btn-group">
 
 
-                <div className="nav-item dropdown">
-                  <NavLink className="nav-link dropdown-toggle" to="/" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <div className="nav-item  dropdown">
+                  <Link className="nav-link dropdown-toggle" to="/" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     BLOGS
-                  </NavLink>
+                  </Link>
                   <ul className="dropdown-menu">
-                    <li><NavLink className="dropdown-item" to="/">Blog Left Sidebar</NavLink></li>
-                    <li><NavLink className="dropdown-item" to="/">Blog Right Sidebar</NavLink></li>
-                    <li><NavLink className="dropdown-item" to="/">No Sidebar</NavLink></li>
-                    <li><NavLink className="dropdown-item" to="/">Blog Detail</NavLink></li>
+                    <li><Link className="dropdown-item Linkk" to="/">Blog Left Sidebar</Link></li>
+                    <li><Link className="dropdown-item Linkk" to="/">Blog Right Sidebar</Link></li>
+                    <li><Link className="dropdown-item Linkk" to="/">No Sidebar</Link></li>
+                    <li><Link className="dropdown-item Linkk" to="/">Blog Detail</Link></li>
                   </ul>
                 </div>
               </div>
@@ -227,25 +231,25 @@ function Header() {
               <div className="dropbtn"><img src='https://w7.pngwing.com/pngs/563/496/png-transparent-computer-icons-gear-setting-area-setting-set-thumbnail.png' height='25' width='25' /></div>
               <div className="dropdown-content">
                 <h4>Languages</h4>
-                <NavLink to="/">English</NavLink>
-                <NavLink to="/">Franch</NavLink><br />
+                <Link to="/">English</Link>
+                <Link to="/">Franch</Link><br />
                 <h4>Currency</h4>
-                <NavLink to="/">$USD</NavLink>
-                <NavLink to="/">$IND</NavLink>
-                <NavLink to="/">$EUR</NavLink>
-                <NavLink to="/">$GBP</NavLink>
+                <Link to="/">$USD</Link>
+                <Link to="/">$IND</Link>
+                <Link to="/">$EUR</Link>
+                <Link to="/">$GBP</Link>
               </div>
             </div>
             <div className='homepagedisplayflexdk' id='size' col-1>
-             
-            <NavLink to={"/Cart"} className='text-dark text-decoration-none'> <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvzsHdivSzgnGmBt5up1Qz6IZuK20equGS3t5Yi3oXbpeP500N_dv5LSoH6ql-mhe8pQQ&usqp=CAU' height='37' width='37' /><span className='border border-2 text-bg-warning rounded-5 p-2'>{cartItem.length}</span></NavLink>
+
+              <Link to={"/Cart"} className='text-dark text-decoration-none'> <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvzsHdivSzgnGmBt5up1Qz6IZuK20equGS3t5Yi3oXbpeP500N_dv5LSoH6ql-mhe8pQQ&usqp=CAU' height='37' width='37' /><span className='border border-2 text-bg-warning rounded-5 p-2'>{cartItem.length}</span></Link>
             </div>
 
           </nav>
         </div>
 
       </div>
-     
+
 
     </>
 
