@@ -1,0 +1,68 @@
+{
+  "WatchesBrand":[
+
+      {
+          "id":1,
+          "image":"https://multikart-react-reactpixelstrap.vercel.app/_next/static/media/cat2.69f214ab.png",
+          "title":"MODEL WATCH",
+          "subtitle":"D1 Milano",
+          "type":"Damaskeening",
+          "brand":"Diving Watch",
+          "feature":"Dollor Watch",
+          "rating": {
+            "rate": 3.9,
+            "count": 120
+          },
+          "button":"VIEW MORE"
+      },
+
+
+
+      {
+          "id":2,
+          "image":"https://multikart-react-reactpixelstrap.vercel.app/_next/static/media/cat2.69f214ab.png",
+          "title":"CALCULATOR WATCH",
+          "subtitle":"Shock-Resistance Watch",
+          "type":"Skeleton Watch",
+          "brand":"Solar-Powered Watch",
+          "feature":"Solar-Powered Watch",
+          "rating": {
+            "rate": 3.9,
+            "count": 120
+          },
+          "button":"VIEW MORE"
+      },
+      {
+          "id":3,
+          "image":"https://multikart-react-reactpixelstrap.vercel.app/_next/static/media/cat3.167cb5cb.png",
+          "title":"ANTIMEGNENTIC WATCH",
+          "subtitle":"Watchmaking Conglomarates",
+          "type":"Breitling SA",
+          "brand":"Casio Watch",
+          "feature":"Citizen Watch",
+          "rating": {
+            "rate": 3.9,
+            "count": 120
+          },
+          "button":"VIEW MORE"
+      },
+
+      {
+          "id":4,
+          "image":"https://multikart-react-reactpixelstrap.vercel.app/_next/static/media/cat2.69f214ab.png",
+          "title":"HISTORY OF  WATCHES",
+          "subtitle":"Manufacture D'horlogerie",
+          "type":"Mechanical Watche",
+          "brand":"Microbrand Watches",
+          "feature":"MIL-W-46374",
+          "rating": {
+            "rate": 3.9,
+            "count": 120
+          },
+          "button":"VIEW MORE"
+      }
+
+     
+  ]
+}
+

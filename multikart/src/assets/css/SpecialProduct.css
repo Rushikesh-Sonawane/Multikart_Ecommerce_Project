@@ -1,0 +1,38 @@
+.middledk{
+    margin-left: 100px;
+    color: red;
+   
+   
+}
+.middledkk{
+    margin-left: 60px; 
+    color:black;
+   
+}
+.middledkk:hover{
+color:red;
+
+}
+
+.backgrounddk{
+    background-color: rgb(255, 252, 252);
+    display:inline-flex;
+    margin-top: 0px;
+    background-color:rgb(240, 238, 238);
+}
+.middleddkk{
+    margin-left: 40px; 
+}
+.margin_headinddk{
+   margin-left: 480px;
+   
+}
+.margin_headinddkk{
+    margin-left: 570px;
+    
+ }
+ .allbgdk{
+    background-color:rgb(240, 238, 238);
+    margin-top: 40px;
+ }
+ 

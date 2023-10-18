@@ -9,9 +9,11 @@ import LogoLine from "./LogoLine";
 
 
 
+
 function Home() {
   return (
     <div>
+      
     <LogoLine/>
     </div>
   );
