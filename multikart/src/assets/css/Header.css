@@ -1,9 +1,45 @@
+
 .container-fluiddk {
   display: flex;
   font-size: 15px;
   background-color: rgb(244, 240, 240);
   opacity: 0.5;
-  ;
+  
+}
+.headerdk{
+    display:flex;
+    font-size: 15px;
+    background-color:rgb(244, 240, 240);
+    opacity:  0.5;;
+    
+   
+} 
+
+#navbardk{
+    display:flex;
+    height:60px;
+   align-items: center;
+   font-size: 15px;
+ 
+ 
+   
+}
+#navbar1dk{
+    padding-left: 80px;
+}
+.homepagenav{
+    display:flex;
+    
+}
+.container2dk{
+    display:flex;
+    font-size: 20px;
+    margin: auto; 
+    margin-top: 0;
+    margin-left: 25px; 
+    margin-top: 1px;
+    align-items: center;
+
 }
 
 #navbardk {
@@ -69,15 +105,18 @@
   border-bottom: 0px;
 }
 
-.dropdown-item:hover {
-  border-bottom: 2px solid red;
-  width: 10px;
-  transition: 1s
-}
+.dropdown-item:hover{
+    border-bottom: 2px solid red;
+    width:10px;
+    transition:1s;
+    
+} 
 
-.offcanvas-body {
-  margin-left: 30PX;
-  cursor: pointer;
+
+.offcanvas-body{
+  margin-left:30PX;
+cursor: pointer;
+
 
 }
 

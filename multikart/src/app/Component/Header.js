@@ -12,7 +12,7 @@ function Header() {
 
   return (
     <>
-      <div id='navbardk' className='container-fluiddk'>
+      <div id='navbardk' className='container-fluid headerdk'>
 
         <div id='navbar1dk'>
           Welcome to Our store Multikart
@@ -24,12 +24,12 @@ function Header() {
         <div className="dropdown">
           <div className="dropbtn"><img src='https://w7.pngwing.com/pngs/129/350/png-transparent-contact-friend-icon-pawn-person-symbol-thumbnail.png' width='13' height='13' />My Account</div>
           <div className="dropdown-content">
-            <Link to={"/Login"} >Login</Link>
-            <Link to={"/Wishlist"} >Wishlist</Link>
-            <Link to={"/Cart"} >Cart</Link>
-            <Link to={"/clothing"} className='text-dark offset-9 text-decoration-none'>CartItem:{cartItem.length}</Link>
-            <Link to={"/Register"} >Register</Link>
-            <Link to={"/"} >Logout</Link>
+           <li> <Link to={"/Login"} >Login</Link></li>
+           <li> <Link to={"/Wishlist"} >Wishlist</Link></li>
+           <li> <Link to={"/Cart"} >Cart</Link></li>
+           <li> <Link to={"/clothing"} className='text-dark offset-9 text-decoration-none'>CartItem:{cartItem.length}</Link></li>
+           <li> <Link to={"/Register"} >Register</Link></li>
+           <li><Link to={"/"} >Logout</Link></li>
             {/* <Link to="/"><h6>Login</h6></Link>
             <Link to="/"><h6>Register</h6></Link>
             <Link to="/"><h6>Log Out</h6></Link> */}
@@ -89,6 +89,7 @@ function Header() {
                     HOME
                   </Link>
                   <ul className="dropdown-menu">
+
                     <li><Link className="dropdown-item Linkk" to="/">New Demo New</Link></li>
                     <li><Link className="dropdown-item Linkk" to="/clothing">Clothing</Link></li>
                     <li><Link className="dropdown-item Linkk" to="/">Basics</Link></li>
@@ -96,9 +97,11 @@ function Header() {
                     <li><Link className="dropdown-item Linkk" to="/">Electronic</Link></li>
                     <li><Link className="dropdown-item Linkk" to="/furniture">Furniture</Link></li>
                     <li><Link className="dropdown-item Linkk" to="/vegetable">Vegetables</Link></li>
-                    <li><Link className="dropdown-item Linkk" to="/">Watch</Link></li>
+                    <li><Link className="dropdown-item Linkk" to="/Watch">Watch</Link></li>
                     <li><Link className="dropdown-item Linkk" to="/">Lights</Link></li>
                     <li><Link className="dropdown-item Linkk" to="/">Goggles</Link></li>
+
+         
 
                   </ul>
                 </div>
@@ -112,6 +115,7 @@ function Header() {
                     SHOP
                   </Link>
                   <ul className="dropdown-menu" >
+
                     <li><Link className="dropdown-item Linkk" to="/">Left Sidebar</Link></li>
                     <li><Link className="dropdown-item Linkk" to="/">Right Sidebar</Link></li>
 
@@ -121,7 +125,19 @@ function Header() {
                     <li><Link className="dropdown-item Linkk" to="/">Full Width New</Link></li>
                     <li><Link className="dropdown-item Linkk" to="/">3 Grid</Link></li>
                     <li><Link className="dropdown-item Linkk" to="/">6 Grid</Link></li>
-                    vercel<li><Link className="dropdown-item Linkk" to="/">List View</Link></li>
+                    <li><Link className="dropdown-item Linkk" to="/">List View</Link></li>
+
+                    <li><Link className="dropdown-item  hoveringdk "  to="/">Left Sidebar</Link></li>
+                    <li><Link className="dropdown-item hoveringdk" to="/">Right Sidebar</Link></li>
+
+                    <li><Link className="dropdown-item hoveringdk" to="/">No Sidebar</Link></li>
+                    <li><Link className="dropdown-item" to="/">Sidebar Popup</Link></li>
+                    <li><Link className="dropdown-item" to="/">Metro New</Link></li>
+                    <li><Link className="dropdown-item" to="/">Full Width New</Link></li>
+                    <li><Link className="dropdown-item" to="/">3 Grid</Link></li>
+                    <li><Link className="dropdown-item" to="/">6 Grid</Link></li>
+                    <li><Link className="dropdown-item" to="/">List View</Link></li>
+
                   </ul>
                 </div>
 
@@ -178,12 +194,10 @@ function Header() {
                 <div className="nav-item  dropdown">
                   <Link className="nav-link dropdown-toggle" to="/" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     PAGES
+
                   </Link>
                   <ul className="dropdown-menu    ">
                     <li><Link className="dropdown-item Linkk" to="/">Vendor NEW</Link></li>
-                    <li><Link className="dropdown-item Linkk" to="/">Account</Link>
-                      
-                    </li>
 
                     <li><Link className="dropdown-item Linkk" to="/">About-us</Link></li>
                     <li><Link className="dropdown-item Linkk" to="/">Search</Link></li>
@@ -196,6 +210,7 @@ function Header() {
                     <li><Link className="dropdown-item Linkk" to="/">Site-Map</Link></li>
                     <li><Link className="dropdown-item Linkk" to="/">404</Link></li>
 
+
                   </ul>
                 </div>
               </div>
@@ -205,15 +220,23 @@ function Header() {
               <div className="btn-group">
 
 
-                <div className="nav-item  dropdown">
+
+                <div className="nav-item dropdown">
                   <Link className="nav-link dropdown-toggle" to="/" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    BLOGS
+                    Account
                   </Link>
                   <ul className="dropdown-menu">
-                    <li><Link className="dropdown-item Linkk" to="/">Blog Left Sidebar</Link></li>
-                    <li><Link className="dropdown-item Linkk" to="/">Blog Right Sidebar</Link></li>
-                    <li><Link className="dropdown-item Linkk" to="/">No Sidebar</Link></li>
-                    <li><Link className="dropdown-item Linkk" to="/">Blog Detail</Link></li>
+                    <li><Link className="dropdown-item" to="/">Wishlist</Link></li>
+                    <li><Link className="dropdown-item" to="/">Cart</Link></li>
+                    <li><Link className="dropdown-item" to="/">Dashboard</Link></li>
+                    <li><Link className="dropdown-item" to="/">Login</Link></li>
+                    <li><Link className="dropdown-item" to="/">Login-Autht</Link></li>
+                    <li><Link className="dropdown-item" to="/">Register</Link></li>
+                    <li><Link className="dropdown-item" to="/">contact</Link></li>
+                    <li><Link className="dropdown-item" to="/">Forgot-Password</Link></li>
+                    <li><Link className="dropdown-item" to="/">Profile</Link></li>
+                    <li><Link className="dropdown-item" to="/">Checkout</Link></li>
+
                   </ul>
                 </div>
               </div>
@@ -231,13 +254,13 @@ function Header() {
               <div className="dropbtn"><img src='https://w7.pngwing.com/pngs/563/496/png-transparent-computer-icons-gear-setting-area-setting-set-thumbnail.png' height='25' width='25' /></div>
               <div className="dropdown-content">
                 <h4>Languages</h4>
-                <Link to="/">English</Link>
-                <Link to="/">Franch</Link><br />
+               <li><Link to="/">English</Link></li> 
+               <li><Link to="/">Franch</Link></li><br />
                 <h4>Currency</h4>
-                <Link to="/">$USD</Link>
-                <Link to="/">$IND</Link>
-                <Link to="/">$EUR</Link>
-                <Link to="/">$GBP</Link>
+                <li><Link to="/">$USD</Link></li>
+                <li><Link to="/">$IND</Link></li>
+                <li><Link to="/">$EUR</Link></li>
+                <li><Link to="/">$GBP</Link></li>
               </div>
             </div>
             <div className='homepagedisplayflexdk' id='size' col-1>
